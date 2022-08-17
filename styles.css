@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0; 
+  max-width: 100%;
 }
 
 body {
@@ -129,4 +130,44 @@ a.list-header-items:hover {
   padding: 0 1em 1em 1em;
   width: 40%;
   margin: auto;
+}
+
+/* contact */
+.contact-heading {
+  text-align: center;
+  padding: 0.5em;
+}
+
+form {
+  width: 60vw;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input {
+  margin: 0.25em;
+  width: 50%;
+  min-height: 2em;
+}
+
+label + input[type=text] {
+  clear: left;
+}
+
+button[type="submit"] {
+  display: block;
+  height: 2em;
+  font-size: 1rem;
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  min-width: 75px;
+  margin: 0.5em auto 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
