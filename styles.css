@@ -14,7 +14,8 @@ body {
 .header {
   background-color: #1B2522;
   height: max-content;
-  padding: 0.75em;
+  width: 100vw;
+  padding: 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,13 +33,76 @@ ul {
 
 a.list-header-items {
   text-decoration: none;
-  padding: 1em;
+  padding: 0.5em 1em;
   color: #FFFFFF;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 a.list-header-items:hover {
   background-color: #00AAFF;
   border-radius: 45px;
+}
+
+.front-header {
+  position: relative;
+  display: inline-block;
+}
+
+.header-image {
+  height: auto;
+  width: 100vw;
+}
+
+.first-title {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
   color: #FFFFFF;
+  font-size: 4rem;
+  left: 0;
+  right: 0;
+  top: 25%;
+  width: 100%;
+}
+
+.second-title {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: 2.3em auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  width: 100%; 
+}
+
+.button-learn-more {
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-weight: light;
+  font-size: 1.2rem;
+  padding: 0.25em 0.75em;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  margin: 7em auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  width: 150px; 
+}
+
+.arrow-down {
+  position: absolute;
+  z-index: 1;
+  margin: 20% auto;
+  left: 0;
+  right: 0;
+  top: 55%;
+  width: 30px;
 }
