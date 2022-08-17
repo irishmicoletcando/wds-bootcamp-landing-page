@@ -1,0 +1,44 @@
+/* importing Google Font - Gotham Rounded */
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  font-family: 'Gotham Rounded', sans-serif;
+}
+
+.header {
+  background-color: #1B2522;
+  height: max-content;
+  padding: 0.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a.list-header-items {
+  text-decoration: none;
+  padding: 1em;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+a.list-header-items:hover {
+  background-color: #00AAFF;
+  border-radius: 45px;
+  color: #FFFFFF;
+}
