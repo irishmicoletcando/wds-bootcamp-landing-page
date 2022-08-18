@@ -115,6 +115,33 @@ a.list-header-items:hover {
   width: 30px;
 }
 
+/* curriculum */
+.curriculum {
+  margin: 2em;
+}
+
+.curriculum-title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.curriculum-content {
+  column-count: 2;
+}
+
+.html, .vscode, .editing, .node-js, .database, .react {
+  margin: auto;
+  padding: 0.5em;
+  width: 70%;
+}
+
+.important-icons {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 0 0.5em 0.5em 0.5em;
+}
+
 /* free-content part */ 
 .free-content {
   background-color: #00AAFF;
@@ -139,13 +166,14 @@ a.list-header-items:hover {
 }
 
 form {
-  width: 60vw;
-  min-width: 300px;
-  max-width: 500px;
+  width: 80vw;
+  min-width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 label {
-  display: block;
+  display: inline;
   margin: 0.5rem 0;
 }
 
@@ -155,8 +183,10 @@ input {
   min-height: 2em;
 }
 
-label + input[type=text] {
-  clear: left;
+input[type="text"], input[type="email"] {
+  width: 30%;
+  display: inline-block;
+  margin-right:20px;
 }
 
 button[type="submit"] {
