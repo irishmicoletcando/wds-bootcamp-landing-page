@@ -8,6 +8,7 @@
 ### The Challenge
 
 <img src="images/layout.png" alt="bootcamp-landing-page-layout">
+<img src="images/other-layout.png" alt="bootcamp-landing-page-layout">
 
 ### Links
 
