@@ -13,7 +13,7 @@ body {
 }
 
 /* navbar */
-.header {
+.header, .footer {
   background-color: #1B2522;
   height: max-content;
   width: 100vw;
@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 
-.header-list-ul {
+.header-list-ul, .footer-list-ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -84,7 +84,7 @@ a.list-header-items:hover {
 .button-learn-more {
   background-color: transparent;
   color: #FFFFFF;
-  font-family: 'Gotham Rounded', sans-serif;
+  font-family: inherit;
   font-weight: light;
   font-size: 1.2rem;
   padding: 0.25em 0.75em;
@@ -140,6 +140,7 @@ a.list-header-items:hover {
   width: 50px;
   height: 50px;
   padding: 0 0.5em 0.5em 0.5em;
+  clear: left;
 }
 
 /* free-content part */ 
@@ -154,7 +155,7 @@ a.list-header-items:hover {
 }
 
 .free-text {
-  padding: 0 1em 1em 1em;
+  padding: 0 1em 2em 1em;
   width: 40%;
   margin: auto;
 }
@@ -166,38 +167,67 @@ a.list-header-items:hover {
 }
 
 form {
-  width: 80vw;
-  min-width: 400px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-label {
-  display: inline;
-  margin: 0.5rem 0;
-}
-
-input {
-  margin: 0.25em;
-  width: 50%;
-  min-height: 2em;
-}
-
-input[type="text"], input[type="email"] {
-  width: 30%;
   display: inline-block;
-  margin-right:20px;
+  width: 100vw;
+  margin: auto;
+  padding: 0.5em 5em 0.5em 5em;
+  
 }
 
-button[type="submit"] {
+.name-form, .email-form {
+  display:inline-block;
+  margin-right: 2em;
+}
+
+label, input, textarea {
+  display: block;
+  margin: 0.5rem;
+}
+
+input[type=text], input[type=email], textarea {
+  min-width: 40vw;
+  max-width: 100vw;
+  min-height: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-input {
+  height: 10em;
+  width: 100%;
+  overflow: auto;
+}
+
+button[type=submit] {
   display: block;
   height: 2em;
   font-size: 1rem;
   background-color: #00AAFF;
   color: #FFFFFF;
   min-width: 75px;
-  margin: 0.5em auto 2em;
+  margin: 0.5em 0 2em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  float:right;
+}
+
+button[type=submit]:hover {
+  background-color: #0373ab;
+}
+
+@media screen and (max-width: 500px) {
+  .form-first-row, .form-second-row, input[type=submit] {
+    display: block !important;
+    width: 50% !important;
+    margin-top: 0;
+  }
+
+  .first-title {
+    font-size: 3rem !important;
+  }
+
+  .important-icons {
+    clear: both !important;
+  }
 }

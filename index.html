@@ -82,22 +82,32 @@
   <div class="form-submission">
     <h1 class="contact-heading">Contact</h1>
     <form>
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email">
-      <label for="message">Message</label>
-      <textarea name="message" id="message" cols="60" rows="10"></textarea>
+      <div class="form-first-row">
+        <div class="name-form">
+          <label for="name">Name</label>
+          <input type="text" name="name">
+        </div>
+        <div class="email-form">
+          <label for="email">Email</label>
+          <input type="email" name="email">
+        </div>
+      </div>
+      <div class="form-second-row">
+        <div class="message-form">
+          <label for="message">Message</label>
+          <textarea name="message" class="message-input" cols="30" rows="10"></textarea>
+      </div>
+  </div>
       <button type="submit" class="submit">Send</button>
     </form>
   </div>
   <!-- form end -->
 
   <!-- repeated navbar in footer start -->
-  <div class="header">
+  <div class="footer">
     <span><img class="wds-logo" src="images/wds_logo.png" alt="wds-logo"></span>
-    <div class="header-list">
-      <ul class="header-list-ul">
+    <div class="footer-list">
+      <ul class="footer-list-ul">
         <li><a class="list-header-items" href="#">Curriculum</a></li>
         <li><a class="list-header-items" href="#">Pricing</a></li>
         <li><a class="list-header-items" href="#">Contact</a></li>
