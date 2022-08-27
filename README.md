@@ -12,7 +12,7 @@
 
 ### Links
 
-- Live Site URL: [Bootcamp Landing Page - Netlify](https://wds-bootcamp-landing-page.vercel.app/)
+- Live Site URL: [Bootcamp Landing Page - Demo](https://wds-bootcamp-landing-page.vercel.app/)
 
 ### Built with
 
