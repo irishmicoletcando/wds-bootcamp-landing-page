@@ -12,7 +12,7 @@
 
 ### Links
 
-- Live Site URL: [Bootcamp Landing Page - Netlify](https://glowing-toffee-a9ad5a.netlify.app/)
+- Live Site URL: [Bootcamp Landing Page - Netlify](https://wds-bootcamp-landing-page.vercel.app/)
 
 ### Built with
 
